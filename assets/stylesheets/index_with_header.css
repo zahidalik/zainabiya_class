@@ -6,14 +6,54 @@
 }
 
 .navbar {
-  height: 50px;
-  background-color: blue;
+  height: 60px;
+  background-color: rgba(89, 98, 117, 1);
+  display: flex;
+  align-items: center; /* y axis */
+  justify-content: space-between; /* x axis */
+  color: white;
+  padding: 0 80px;
 }
 
-.navbar div {
-  display: inline-block;
-  padding: 20px 30px;
+.left_nav {
+  display: flex;
+  align-items: baseline;
+  /* justify-content: space-evenly; */
+  gap: 20px;
+}
+
+.right_nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-btn {
+  padding: 8px 16px;
+  background-color: rgba(56, 173, 169, 1);
+  border: none;
+  border-radius: 3px;
   color: white;
+  font-size: large;
+}
+
+.signup-btn {
+  padding: 8px 16px;
+  background-color: rgba(88, 177, 159, 1);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: large;
+}
+
+.login-btn:hover {
+  background-color: rgb(35, 120, 117);
+  transition: all 0.5s ease-in-out;
+}
+
+.signup-btn:hover {
+  background-color: rgb(75, 153, 137);
+  transition: all 0.5s ease-in-out;
 }
 
 .montserrat-regular {
@@ -28,4 +68,5 @@
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
+  font-size: 30px;
 }
